@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">    
+    <head>      
+            <meta http-equiv="refresh" th:attr="content='30; url=' + ${BaseRedirectURI} + ${RedirectPath}" />    
+    </head>    
+    <body> 
+            <h1>Please update your bookmarks</h1>
+            <p>This page has moved to: <a th:attr="href=${BaseRedirectURI} + ${RedirectPath}" th:text="${BaseRedirectURI} + ${RedirectPath}"/>. You will be redirected in 30 seconds.</p> 
+    </body>
+</html>
